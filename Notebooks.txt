@@ -4,4 +4,51 @@
 Maternal Health Data Validation and Clinical Readiness Assessment 
 
 ## Objective 
+To validate maternal health for 
+-clinical plausablity 
+-logical consistency 
+-analytical reliablity 
 
+# Why?
+Maternal health datasets are frequently used for risk stratification and outcome analysis.
+Errors in vitals, age, or risk labeling can lead to incorrect conclusions and unsafe clinical decisions.
+This project treats data validation as a prerequisite to any predictive or analytical work.
+
+# Assu7mptions and Scope 
+- Dataset represents individual maternal observations, not longitudinal patient histories (unless proven otherwise)
+- Clinical thresholds are based on standard medical ranges, not patient-specific diagnosis
+- No intervention or outcome prediction is performed in this project
+
+#Tools used 
+
+- Python (version)
+
+- Pandas
+
+- NumPy
+
+- Matplotlib 
+
+- Jupyter Notebook
+
+## PROJECT STRUCTURE 
+
+Notebook 0 – Project setup & framing
+Notebook 1 – Raw data ingestion & sanity checks
+Notebook 2 – Clinical rule definition
+Notebook 3 – Record-level validation
+Notebook 4 – Cross-field logical validation
+Notebook 5 – Distribution & outlier analysis
+Notebook 6 – Missingness & bias assessment
+Notebook 7 – Validation summary & readiness report
+Notebook 8 – SQL translation blueprint
+
+## Success Criteria 
+
+- All biologically impossible values are flagged
+
+- Logical contradictions are identified and quantified
+
+- Dataset readiness is classified as usable / conditionally usable / not usable
+
+- Validation rules are portable to SQL
